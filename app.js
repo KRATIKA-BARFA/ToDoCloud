@@ -10,13 +10,15 @@ import {
   You MUST replace the object below with your project's config
   (get it from Firebase Console -> Project settings -> SDK setup)
 ------------------------*/
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "FIREBASE_API_KEY",
-  authDomain: "FIREBASE_AUTH_DOMAIN",
-  projectId: "FIREBASE_PROJECT_ID",
-  storageBucket: "FIREBASE_STORAGE_BUCKET",
-  messagingSenderId: "FIREBASE_MSG_SENDER_ID",
-  appId: "FIREBASE_APP_ID"
+  apiKey: "AIzaSyANlkmwUPPT1ZOKSyZdXrDZkPvBbZbQ52g",
+  authDomain: "todocloud-b8cb3.firebaseapp.com",
+  projectId: "todocloud-b8cb3",
+  storageBucket: "todocloud-b8cb3.firebasestorage.app",
+  messagingSenderId: "369970028487",
+  appId: "1:369970028487:web:dbc32d9b37dc2b840d03e2",
+  measurementId: "G-0WE2L10GQQ"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -85,3 +87,4 @@ onSnapshot(q, (snapshot) => {
     taskList.appendChild(li);
   });
 });
+
